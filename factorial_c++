@@ -5,11 +5,14 @@ int main() {
     // gue mau membuat program faktorial
     int n, factorial = 1;
     cout << "masukkan nilai n: "; cin >> n;
-    
+
+    // membuat struktur perulangannya
     for(int i= 1; i<=n; i++ ){
         factorial *= i;
         cout << "faktorial ke " <<i << " adalah " << factorial << endl;
     }
+
+    // inputan terakhir
     cout << endl;
     cout << "Faktorial dari " <<n << " adalah " << factorial << endl;
 
