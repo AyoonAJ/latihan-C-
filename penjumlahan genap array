@@ -9,7 +9,10 @@ int main() {
     int b_akhir;
     
     // gue disini bikin inputannya dulu
-    cout << "masukkan panjang arraynya: "; cin >> b_akhir;
+    for (int a = 0; a < b_akhir; a++){
+        cout << "array ke- " << a << "= " << array[a];
+        cout << endl;
+    }
     
     // tampikan arraynya
     for (int a = 0; a < b_akhir)
