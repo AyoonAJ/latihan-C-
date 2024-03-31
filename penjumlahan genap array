@@ -1,0 +1,27 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    // gue mau bikin program penjumlahan array genap aja
+    int array[] = {1,2,3,4,5,6,7,8,9,10};
+    int sum = 0;
+    int b_akhir;
+    
+    // gue disini bikin inputannya dulu
+    cout << "masukkan panjang arraynya: "; cin >> b_akhir;
+    
+    // tampikan arraynya
+    for (int a = 0; a < b_akhir)
+    
+    for (int i = 0; i < b_akhir; i++) {
+        if (array[i] % 2 == 0) {
+            sum += array[i];
+        }
+    }
+    
+    cout << "Penjumlahan elemen array yang genap: " << sum << endl;
+    
+
+    return 0;
+}
