@@ -10,14 +10,14 @@ int main() {
     // menampilkan output dari nilai max yaitu 5
     cout << "nilai max saat ini adalah " << max << endl << endl;
     for (int i = 1; i < 7; ++i) {
-        if (array[i] > max) {
-            // ketika nilai array[i] > max, maka velue max berubah yg awal nya 5 menjadi velue > 5
+        if (array[i] > max && array[i] % 2 == 0) {
+            // ketika nilai array[i] > max, maka velue max berubah yg awal nya 5 menjadi velue > 5, dan jika mod 2 hasilnya 0
             max = array[i];
         }
     }
 
     // cetak velue max
-    cout << "Nilai maksimum dalam array adalah: " << max << endl;
+    cout << "Nilai maksimum dan genap dalam array adalah: " << max << endl;
 
     return 0;
 }
