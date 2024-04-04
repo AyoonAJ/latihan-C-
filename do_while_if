@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Masukkan sebuah bilangan positif: ";
+    cin >> num;
+
+    // Perulangan do-while untuk memastikan pengguna memasukkan bilangan positif
+    do {
+        if (num <= 0) {
+            cout << "Bilangan yang dimasukkan harus positif. Silakan coba lagi: ";
+            cin >> num;
+        }
+    } while (num <= 0);
+
+    cout << "Bilangan yang dimasukkan: " << num << endl;
+
+    return 0;
+}
