@@ -1,0 +1,26 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    // gue mau bikin kategori menentukan umur
+    int usia;
+    cout << "Masukkan usia anda: "; cin>> usia;
+    cout <<endl;
+    
+    if(usia >= 0 && usia <= 2){
+        cout << "balita";
+    } else if(usia >= 3 && usia <= 12){
+        cout << "anak anak";
+    }else if(usia >= 13 && usia <= 18){
+        cout << "remaja";
+    }else if(usia >= 19 && usia <= 59){
+        cout << "dewasa";
+    }else if(usia >= 60){
+        cout << "lansia";
+    }else{
+        cout << "usia tidak valid";
+    }
+
+    return 0;
+}
