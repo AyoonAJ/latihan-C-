@@ -1,0 +1,58 @@
+#include <iostream>
+using namespace std;
+
+// Fungsi untuk menghitung penambahan
+double tambah(double a, double b) {
+    return a + b;
+}
+
+// Fungsi untuk menghitung pengurangan
+double kurang(double a, double b) {
+    return a - b;
+}
+
+// Fungsi untuk menghitung perkalian
+double kali(double a, double b) {
+    return a * b;
+}
+
+// Fungsi untuk menghitung pembagian
+double bagi(double a, double b) {
+    if (b == 0) {
+        cout << "Tidak bisa melakukan pembagian dengan nol!" << endl;
+        return 0;
+    }
+    return a / b;
+}
+
+int main() {
+    double num1, num2;
+    char operasi;
+
+    cout << "Masukkan angka ke-1: ";
+    cin >> num1;
+    cout << "Masukkan angka ke-2: ";
+    cin >> num2;
+    cout << "\nMasukkan operasi (+, -, *, /): ";
+    cin >> operasi;
+
+    switch (operasi) {
+        case '+':
+            cout << "Hasil: " << tambah(num1, num2) << endl;
+            break;
+        case '-':
+            cout << "Hasil: " << kurang(num1, num2) << endl;
+            break;
+        case '*':
+            cout << "Hasil: " << kali(num1, num2) << endl;
+            break;
+        case '/':
+            cout << "Hasil: " << bagi(num1, num2) << endl;
+            break;
+        default:
+            cout << "Operasi tidak valid!" << endl;
+            break;
+    }
+
+    return 0;
+}
