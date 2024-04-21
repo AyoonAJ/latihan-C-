@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int numbers[] = {50, 30, 40, 20, 10};
+    int temp; //varibale tampungan 
+
+    // Menggunakan algoritma bubble sort untuk mengurutkan nilai dalam array secara ascending
+    for(int i = 0; i < 5; i++) {
+        for(int j = i + 1; j < 5; j++) {
+            if(numbers[i] > numbers[j]) {
+                temp = numbers[i];   //nilai array ke-i akan ditampung pada variable temp
+                numbers[i] = numbers[j];
+                numbers[j] = temp;
+            }
+        }
+    }
+
+    cout << "Array setelah diurutkan secara ascending:\n";
+    for(int i = 0; i < 5; i++) {
+        cout << numbers[i] << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
